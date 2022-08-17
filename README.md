@@ -2,7 +2,9 @@
 
 We have adapted the scripts pertaining to Bhattarai-Kline et. al 2022, Nature, available on our [GitHub](https://github.com/Shipman-Lab/Spacer-Seq), into this Jupyter notebook. This notebook serves as a self-contained, interactive walkthrough of the deep sequencing data generated during our experiments. The notebook requires `Jupyter-notebook` to be installed; the rest of the dependencies are handled internally within the notebook. Note that the analysis pipeline is meant to be run on a Unix-like operating system; nonetheless, it can be adapted to run on Windows-based OSs with minimal changes to the notebook, which are pointed out herein.
 
-### Overview of the analysis pipeline
+---------- 
+
+## Overview of the analysis pipeline
 
 After quality-based read trimming, the first part of the analysis consists in extracting new spacers found in the sequenced CRISPR arrays, and storing both the new spacer sequences and the sequence of the read containing them. These reads and spacers are binned according to their characteristics, including the number of new spacers per read.       
       
@@ -18,3 +20,8 @@ In cases such as ours where two promoters are under study, the CRISPR arrays are
 3. **B/N score.** The same interpretations of the $A/N$ score applies here, except in relation to $B$ rather than $A$. However, by definition, $B/N$ takes into account the relative frequencies of Leader-adjacent vs. Leader-proximal $B$-expanded arrays: positive scores suggest that $B$ occurred in the second epoch rather than the first, and conversely for a negative score.
      
 Fig. 3b-e in Lear et. al 2022, Nat Protocols provides hypothetical examples of different transcriptional activity for two promoters across two epochs and what scores might be expected in such cases. See also Box 3 in Lear et. al 2022, Nat Protocols for more information about the exact mathematical calculations and interpretation of a given composite score.
+
+------- 
+
+## Handling dependencies
+Most of the dependencies can be installed through pip, the package installer for Python. For instance, Jupyter-lab, the web-based interactive development environment for Python notebooks used to run our notebook, can be installed through pip. However, we strongly recommend users, especially those less familiar with wrangling Python environments and package installation, to we recommend you use the [Anaconda Distribution](https://www.anaconda.com/distribution) - it includes Python and many other commonly used packages for scientific computing and data science. Anaconda also enables easy installation and handling of dependencies. In particular, we recommend users start with [Miniconda](https://docs.conda.io/en/latest/miniconda.html), a minimal installer for conda. It is a small version of Anaconda that includes only conda, Python, the packages they depend on, and a small number of other useful packages. However, it allows users to use the conda install command to install effectively any package from the Anaconda repository and its various channels, including the wonderful Bioconda channel.
