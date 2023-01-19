@@ -19,7 +19,7 @@ In cases such as ours where two promoters are under study, the CRISPR arrays are
 2. **A/N score.** The $A/N$ score determines how the timing of $A$ is expressed in comparison to the constant signal $N$, for the duration of the recording experiment. It takes into account the relative frequencies of Leader-distal vs. Leader-adjacent $A$-expanded arrays: a positive score suggests that $A$ is strongly expressed in the first epoch rather than the second, and conversely for a negative score.     
 3. **B/N score.** The same interpretations of the $A/N$ score applies here, except in relation to $B$ rather than $A$. However, by definition, $B/N$ takes into account the relative frequencies of Leader-adjacent vs. Leader-proximal $B$-expanded arrays: positive scores suggest that $B$ occurred in the second epoch rather than the first, and conversely for a negative score.
      
-Fig. 3b-e in Lear et. al 2022, Nat Protocols provides hypothetical examples of different transcriptional activity for two promoters across two epochs and what scores might be expected in such cases. See also Box 3 in Lear et. al 2022, Nat Protocols for more information about the exact mathematical calculations and interpretation of a given composite score.
+Fig. 4b-e in Lear et al. 2023, Nat Protocols provides hypothetical examples of different transcriptional activity for two promoters across two epochs and what scores might be expected in such cases. See also Box 3 in Lear et al. 2023, Nat Protocols for more information about the exact mathematical calculations and interpretation of a given composite score.
 
 ------- 
 
